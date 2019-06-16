@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="?attr/colorButtonNormal"
+    tools:context=".SearchActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:background="@color/black"
+        android:gravity="end|center"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:textAlignment="center"
+        android:theme="@style/AppTheme"
+        app:logo="@drawable/logo"
+        app:titleMarginStart="5dp"
+        app:titleTextColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:background="@color/cardview_dark_background"
+        android:text="Touch here to search Quiz Types"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/searchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnsearch"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"></LinearLayout>
+
+</RelativeLayout>
